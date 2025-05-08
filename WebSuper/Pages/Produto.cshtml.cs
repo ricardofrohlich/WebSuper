@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using WebSuper.Models;
 
 namespace WebSuper.Pages
 {
@@ -21,10 +22,4 @@ namespace WebSuper.Pages
         }
     }
 
-    public class Produto
-    {
-        public string Nome { get; set; }
-        public double Preco { get; set; }
-        public int Estoque { get; set; }
-    }
 }
