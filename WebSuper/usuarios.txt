@@ -5,3 +5,4 @@
 10;Mariele;192939;mariele@email.com
 11;Cristyan;1234;cristyan@email.com
 12;Aristides;101010;aristides@gmail.com
+13;Anísio;1234;anisio@gmail.com
