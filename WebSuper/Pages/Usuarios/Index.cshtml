@@ -1,0 +1,32 @@
+﻿@page
+@model WebSuper.Pages.Usuarios.IndexModel
+@{
+    ViewData["Title"] = "Cadastro de Usuário";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+
+<p><a asp-page="Criar">Cadastrar Novo Usuário</a></p>
+
+<table style="border-collapse: collapse; width: 100%;">
+    <thead>
+        <tr>
+            <th style="border: 1px solid black; padding: 8px;">ID</th>
+            <th style="border: 1px solid black; padding: 8px;">Nome</th>
+            <th style="border: 1px solid black; padding: 8px;">Email</th>
+            <th style="border: 1px solid black; padding: 8px;">Senha</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var usuario in Model.Usuarios)
+        {
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">@usuario.Id</td>
+                <td style="border: 1px solid black; padding: 8px;">@usuario.Nome</td>
+                <td style="border: 1px solid black; padding: 8px;">@usuario.Email</td>
+                <td style="border: 1px solid black; padding: 8px;">@usuario.Senha</td>
+            </tr>
+        }
+    </tbody>
+</table>

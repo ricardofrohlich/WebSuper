@@ -1,0 +1,29 @@
+﻿@page
+@model ExemploAula.Pages.Produtos.IndexModel
+@{
+    ViewData["Title"] = "Cadastro de Produtos";
+}
+<h2>@ViewData["Title"]</h2>
+
+<p><a asp-page="Criar">Cadastrar Novo Produto</a></p>
+
+<table style="border-collapse: collapse; width: 100%;">
+    <thead>
+        <tr>
+            <th style="border: 1px solid black; padding: 8px;">ID</th>
+            <th style="border: 1px solid black; padding: 8px;">Descrição</th>
+            <th style="border: 1px solid black; padding: 8px;">Preço</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var produto in Model.Produtos)
+        {
+            <tr>
+                <td style="border: 1px solid black; padding: 8px;">@produto.Id</td>
+                <td style="border: 1px solid black; padding: 8px;">@produto.Descricao</td>
+                <td style="border: 1px solid black; padding: 8px;">@produto.Preco.ToString("C")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

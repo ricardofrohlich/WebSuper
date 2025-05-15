@@ -1,0 +1,7 @@
+1;Ricardo;1234;ricardosma@gmail.com
+1;dsadas;dasdas;223wew@dsds
+2;sdsda;dasdsa;dasdas
+5;Aristides;123456;aristides@gmail.com
+10;Mariele;192939;mariele@email.com
+11;Cristyan;1234;cristyan@email.com
+12;Aristides;101010;aristides@gmail.com

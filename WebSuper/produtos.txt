@@ -1,0 +1,2 @@
+1;Coca Cola;9,99
+2;Pepsi;8,99
