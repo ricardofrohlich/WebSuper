@@ -1,4 +1,5 @@
-1;Coca Cola;11,5
+1;Coca Cola;12
 2;Pepsi;8,99
 3;Guaraná;5
-4;Agua sem gás Crystal;5
+4;Agua sem gás Crystal;5,99
+5;dasasasasasasasasasasasasasasa;13,99

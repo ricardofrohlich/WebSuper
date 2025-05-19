@@ -5,16 +5,17 @@
 }
 <form method="post">
     <div>
-        <label for="Id">ID: </label>
-        <input type="text" id="Id" name="p.Id" />
+        <label asp-for="p.Id">ID</label>
+        <input asp-for="p.Id" type="text"  class="form-control" />
     </div>
     <div>
-        <label for="Descricao">Descrição: </label>
-        <input type="text" id="Descricao" name="p.Descricao" />
+        <label asp-for="p.Descricao">Descrição</label>
+        <input asp-for="p.Descricao" class="form-control" />
+        <span asp-validation-for="p.Descricao" class="text-danger"></span>
     </div>
     <div>
-        <label for="Preco">Preço: </label>
-        <input type="text" id="Preco" name="p.Preco" />
+        <label asp-for="p.Preco">Preço</label>
+        <input asp-for="p.Preco" type="number" step="0.01" class="form-control" />
     </div>
     <button type="submit" class="btn btn-primary">Criar</button>
 </form>
